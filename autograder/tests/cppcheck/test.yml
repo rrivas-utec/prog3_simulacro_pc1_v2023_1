@@ -1,0 +1,4 @@
+weight: 0.0
+name: 'Test sintactico y de estilo'
+message: 'Resume de revision sintactica y de estilo de Estandares C++'
+show_output: true

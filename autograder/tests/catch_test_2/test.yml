@@ -1,0 +1,4 @@
+weight: 0.0
+name: "Question #2"
+message: 'Su programa no satisface las condiciones de prueba.'
+show_output: true

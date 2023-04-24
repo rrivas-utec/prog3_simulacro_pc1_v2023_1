@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#  compile test:
+#  test-main.o : this is compiled in bootstrap.init and can be linked with all catch tests
+#  -I ../      : indicates that there are files in the parent directory that we '#include' in our test (these are the
+#                files that were submitted by the student).
+#  -o test.exe : name the compiled executable 'test.exe'
+
+# src code references
+source_code='
+  ../P1.cpp
+  test_1.cpp
+  '
+
+# compilation command
+g++ -O4 -D AUTOGRADE -std=c++17 ${source_code} ../test-main.o -I ../ -o test.exe -pthread
+
+#  execute the test
+./test.exe
