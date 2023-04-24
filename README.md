@@ -5,8 +5,8 @@
 ## Indicaciones Específicas
 - El tiempo límite para la evaluación es 100 minutos.
 - Cada pregunta deberá ser respondida en un archivo fuente (`.cpp`) y un archivo cabecera (`.h`) con el número de la pregunta:
-    - `p1.cpp, p1.h`
-    - `p2.cpp, p2.h`
+    - `P1.cpp, P1.h`
+    - `P2.cpp, P2.h`
 - Deberás subir estos archivos directamente a [www.gradescope.com](https://www.gradescope.com) o se puede crear un `.zip` que contenga todos ellos y subirlo.
 
 ## Question #1 - clases, punteros y sobrecarga de operadores y template de clases (12 points)
