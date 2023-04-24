@@ -28,7 +28,7 @@ Y las sobrecargas a los operadores:
 // genera un arreglo dinámico
 symmetric_difference_t<int> sd1 ({1, 5, 3, 8, 2}, {4, 9, 7, 6, 10, 1});
 // imprimiendo los datos
-std::copy(sd1(), sd1() + sd1.size(), std::ostream_iterator<int>(std::cout," ");
+std::copy(sd1(), sd1() + sd1.size(), std::ostream_iterator<int>(std::cout," "));
 std::cout << std::endl;
 // 2 3 4 5 6 7 8 9 10
 !sd1;
@@ -45,12 +45,11 @@ std::vector v1 = {1.0, 10.0, 3.0, 6.0, 2.0, 1.0};
 std::vector v2 = {4.0, 9.0, 7.0, 6.0, 10.0, 1.0};
 symmetric_difference_t<double> sd1 (v1, v2);
 // imprimiendo los datos
-std::copy(sd1(), sd1() + sd1.size(), std::ostream_iterator<double>(std::cout," ")
+std::copy(sd1(), sd1() + sd1.size(), std::ostream_iterator<double>(std::cout," "));
 std::cout << std::endl;
 // 2 3 4 7 9
 !sd1;
-std::copy(sd1(), sd1() + sd1.size(),
-std::ostream_iterator<double>(std::cout," ")
+std::copy(sd1(), sd1() + sd1.size(), std::ostream_iterator<double>(std::cout," "));
 std::cout << std::endl;
 // 9 7 4 3 2
 
