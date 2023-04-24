@@ -26,7 +26,7 @@ Y las sobrecargas a los operadores:
 **Use Case #1:**
 ```cpp
 // genera un arreglo dinámico
-symmetric_difference_t sd1 ({1, 5, 3, 8, 2}, {4, 9, 7, 6, 10, 1});
+symmetric_difference_t<int> sd1 ({1, 5, 3, 8, 2}, {4, 9, 7, 6, 10, 1});
 // imprimiendo los datos
 std::copy(sd1(), sd1() + sd1.size(), std::ostream_iterator<int>(std::cout," ");
 std::cout << std::endl;
@@ -43,7 +43,7 @@ std::cout << std::endl;
 // genera un arreglo dinámico
 std::vector v1 = {1.0, 10.0, 3.0, 6.0, 2.0, 1.0};
 std::vector v2 = {4.0, 9.0, 7.0, 6.0, 10.0, 1.0};
-symmetric_difference_t sd1 (v1, v2);
+symmetric_difference_t<double> sd1 (v1, v2);
 // imprimiendo los datos
 std::copy(sd1(), sd1() + sd1.size(), std::ostream_iterator<double>(std::cout," ")
 std::cout << std::endl;
