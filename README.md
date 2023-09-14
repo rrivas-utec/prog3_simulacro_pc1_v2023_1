@@ -65,11 +65,9 @@ La función debe retornar un contenedor, que por default será `std::vector`, pe
 ```cpp
 std::list<int> lst1 = {3, 3, -3, 5, 4, -4, 0, -4, -4, -5};
 std::deque f1 = get_maximum_product_range<std::deque>(lst1);
-for (const auto& row: f1) {
-	for(const auto& value: row)
-		std::cout << value << " ";
-	std::cout << std::endl;
-}
+for (const auto& value: f1)
+	std::cout << value << " ";
+std::cout << std::endl;
 
 /*
  Se imprimirá:
@@ -81,11 +79,9 @@ for (const auto& row: f1) {
 ```cpp
 std::forward_list<int> flst1 = {1, 2, -3, 0, 0, -3, -2, 5, -1, -5};
 std::vector f1 = get_maximum_product_range(flst1); // En este caso sera vector
-for (auto row: f1) {
-	for(auto value: row)
-		std::cout << value << " ";
-	std::cout << std::endl;
-}
+for (auto value: f1) 
+	std::cout << value << " ";
+std::cout << std::endl;
 /*
  Se imprimirá:
     1 2 -3 -3 -2 5 -5
