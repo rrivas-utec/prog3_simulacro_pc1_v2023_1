@@ -11,10 +11,10 @@
 
 ## Question #1 - clases, punteros y sobrecarga de operadores y template de clases (12 points)
 
-Desarrollar un template de clase `symmetric_difference_t` que permita generar un arreglo dinámico ordenado de enteros a partir de generar la diferencia simétrica de 2 vectores (considerar solo los elementos que estén solamente en uno de los vectores). el template de clase contará con  constructor que cuenten con el siguiente parámetro:
+Desarrollar un template de clase `symmetric_difference_t` que permita generar un arreglo dinámico ordenado de numeros a partir de generar la diferencia simétrica de 2 vectores (considerar solo los elementos que estén solamente en uno de los vectores). el template de clase contará con  constructor que cuenten con el siguiente parámetro:
 - 2 parámetros que permitan ingresar 2 lista (utilizar el tipo `std::vector`).
 
-La clase deberá utilizar **arreglos dinámicos (punteros)**, para el almacenamiento de los enteros. 
+La clase deberá utilizar **arreglos dinámicos (punteros)**, para el almacenamiento de los numeros. 
 
 El método que debe ser implementado es el método:
 
